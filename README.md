@@ -1,4 +1,4 @@
-# M2D: [Target-Label-Free Artificial Intelligence Framework for Cross-Anatomical RNFL Biomarker Segmentation in Optical Coherence Tomography]
+# M2D: Target-Label-Free Artificial Intelligence Framework for Cross-Anatomical RNFL Biomarker Segmentation in Optical Coherence Tomography
 
 This repository contains the core architectural implementation and inference pipeline for the M2D framework. 
 
@@ -17,6 +17,16 @@ To ensure complete methodological transparency as detailed in our study:
 - Image intensity is normalized to a [0, 1] range prior to network ingestion.
 - Random seeds are fixed to guarantee deterministic outputs.
 
-## Note on Full Release
+## Status
 **Currently, this repository provides the structural codebase for peer review.** 
-The comprehensive training codebase, cross-validation scripts, and pre-trained model weights are currently being curated. They will be fully open-sourced and made publicly accessible at this location upon the formal publication of the manuscript.
+The remaining training pipelines, cross-validation scripts, and pre-trained model weights are currently being curated and are scheduled for public release upon publication of this work.
+
+## Citation
+If you find this framework useful in your research, please consider citing our work:
+```bibtex
+@article{M2D_Framework,
+  title={Target-Label-Free Artificial Intelligence Framework for Cross-Anatomical RNFL Biomarker Segmentation in Optical Coherence Tomography},
+  author={Anonymous},
+  journal={Under Review},
+  year={2026}
+}
