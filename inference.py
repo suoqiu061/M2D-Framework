@@ -36,6 +36,12 @@ def main(args):
     # model.load_state_dict(torch.load(args.weights, map_location=device))
     model.eval()
     print("M2D architecture loaded successfully.")
+    
+    # Optional: run a dummy inference to verify pipeline
+    with torch.no_grad():
+        dummy_scan = torch.randn(1, 3, 512, 512).to(device)
+        seg_mask, domain_vector = model(dummy_scan)
+        print(f"Inference verified. Mask shape generated: {seg_mask.shape}")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="M2D Framework Inference Script")
